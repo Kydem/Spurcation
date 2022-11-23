@@ -1,12 +1,20 @@
+import axios from 'axios';
 
-import Amadeus from 'amadeus';
+const options = {
+  method: 'GET',
+  url: 'https://skyscanner50.p.rapidapi.com/api/v1/searchAirport',
+  params: {query: 'london'},
+  headers: {
+    'X-RapidAPI-Key': '65ebfb66f7mshd58171a78baf43bp19d49ajsn149b6640c6df',
+    'X-RapidAPI-Host': 'skyscanner50.p.rapidapi.com'
+  }
+};
 
-console.log(Amadeus)
-
-var amadeus = new Amadeus({
-    clientId: 'Iao1SpAgpxTR1ic2KTQcGb8eFAKrcCUT',
-    clientSecret: 'eSGIDgtGcsv6ICBR'
-  });
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
 
   $.ajax({
     url: 'https://api.positionstack.com/v1/forward',
