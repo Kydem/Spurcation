@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "amadeus": "^7.1.0",
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "leaflet": "^1.9.3"
   }
 }
