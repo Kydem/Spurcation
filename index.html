@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spurcation</title>
+    <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
     crossorigin=""/>
@@ -13,9 +14,49 @@
     crossorigin=""></script>
 </head>
 <body>
-    <h1 class="title">Spurcation</h1>
-    <h3 class="subtitl">The Random Vacation Planner</h3>
-    <div id="map" class="map"></div>
-    <button class="lucky">Want to take a vacation?</button>
-</body>
+    <div class="accept">
+        <button class="accept-button">accept</button>
+    </div>
+    <div class="wrapper">
+        <header>
+          <h2>Vacation Dates</h2>
+          <p>Chose the start and end dates for your trip</p>
+        </header>
+        <div class="date-input">
+            <div class="field">
+                <span>Leave</span>
+                <input type="date" class="first-date">
+            </div>
+            <div class="field">
+                <span>Return</span>
+                <input type="date" class="last-date">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+      <header>
+        <h2>Price Range</h2>
+        <p>Use slider or enter your price range</p>
+      </header>
+      <div class="price-input">
+        <div class="field">
+          <span>Min</span>
+          <input type="number" class="input-min" value="2500">
+        </div>
+        <div class="separator">-</div>
+        <div class="field">
+          <span>Max</span>
+          <input type="number" class="input-max" value="7500">
+        </div>
+      </div>
+      <div class="slider">
+        <div class="progress"></div>
+      </div>
+      <div class="range-input">
+        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 //--------APIs and Imports----------\\
-var amadeus = new Amadeus({
+var amadeus = new amadeus({
     clientId: 'Iao1SpAgpxTR1ic2KTQcGb8eFAKrcCUT',
     clientSecret: 'eSGIDgtGcsv6ICBR'
   });
