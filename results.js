@@ -1,20 +1,23 @@
-// var Amadeus = require('amadeus');
 
-// var amadeus = new Amadeus({
-//     clientId: 'Iao1SpAgpxTR1ic2KTQcGb8eFAKrcCUT',
-//     clientSecret: 'eSGIDgtGcsv6ICBR'
-//   });
+import Amadeus from 'amadeus';
 
-//   $.ajax({
-//     url: 'https://api.positionstack.com/v1/forward',
-//     data: {
-//       access_key: 'a869d740434e24e302317514493768dc',
-//       query: '1600 Pennsylvania Ave NW - Washington',
-//       limit: 1
-//     }
-//   }).done(function(data) {
-//     console.log(JSON.parse(data));
-//   });
+console.log(Amadeus)
+
+var amadeus = new Amadeus({
+    clientId: 'Iao1SpAgpxTR1ic2KTQcGb8eFAKrcCUT',
+    clientSecret: 'eSGIDgtGcsv6ICBR'
+  });
+
+  $.ajax({
+    url: 'https://api.positionstack.com/v1/forward',
+    data: {
+      access_key: 'a869d740434e24e302317514493768dc',
+      query: 'Tucson Arizona',
+      limit: 1
+    }
+  }).done(function(data) {
+    console.log(JSON.parse(data));
+  });
 
 //======Transition======\\
 //If time allows, add visual transitions to functional page++++++++++
@@ -31,9 +34,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-let mark;
-
-//Create a blank marker creator for different hotels in the locations
+//Creates a blank marker creator for different hotels in the locations
 
 let hotel1;
 let hotel2;

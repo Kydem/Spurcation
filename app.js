@@ -33,7 +33,7 @@ rangeInput.forEach(input =>{
 //event listener for user to enter vacation options such as date and price ranges
 const acceptButton = document.querySelector(".accept-button");
 const firstDate = document.querySelector(".first-date");
-const lastDate = document.querySelector(".last-date")
+const lastDate = document.querySelector(".last-date");
 let leaveDate;
 let returnDate;
 let minPrice;
@@ -41,10 +41,10 @@ let maxPrice;
 
 acceptButton.addEventListener('click', ()=>{
     //Store date and price options in background
-    leaveDate = firstDate.value
-    returnDate = lastDate.value
-    minPrice = parseInt(rangeInput[0].value)
-    maxPrice = parseInt(rangeInput[1].value)
-    window.open("results.HTML")
+    leaveDate = firstDate.value;
+    returnDate = lastDate.value;
+    minPrice = parseInt(rangeInput[0].value);
+    maxPrice = parseInt(rangeInput[1].value);
+    window.open("results.HTML");
 })
 

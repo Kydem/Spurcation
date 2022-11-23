@@ -18,6 +18,7 @@ body{
 }
 .wrapper{
   width: 400px;
+  margin: 40px;
   background: #fff;
   border-radius: 10px;
   padding: 20px 25px 40px;
@@ -101,13 +102,21 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 .accept{
+    background-image: linear-gradient(to right  #17A2B8, #ddd, #17A2B8);
+    border: 2px #ddd;
     position: absolute;
     display: flex;
+    bottom: 25%;
     margin-top: 9px;
-    border: 1px #ddd;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+}
+
+.accept-button{
+    background-image: linear-gradient(to right  #17A2B8, #ddd, #17A2B8);
+    border: 2px #ddd;
 }
 
 #map { 
@@ -116,4 +125,5 @@ input[type="range"]::-webkit-slider-thumb{
     background-image: rgb(78, 213, 218);
     top: 20px;
     border-radius: 4px;
+    right: 30%;
 }
