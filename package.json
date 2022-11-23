@@ -3,6 +3,7 @@
   "dependencies": {
     "ajax": "^0.0.4",
     "amadeus": "^7.1.0",
+<<<<<<< HEAD
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.1",
     "leaflet": "^1.9.3",
@@ -30,5 +31,8 @@
   "description": "",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+=======
+    "bootstrap": "^5.2.3"
+>>>>>>> parent of 422367b (Some user data stored; Transition to new page)
   }
 }
