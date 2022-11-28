@@ -1,4 +1,3 @@
-
 //-------APIs and Library list---------//
     //Leaflet(Library): map generation
     //Amadeus(API): Flight generator and Hotel Generator
@@ -46,7 +45,7 @@ acceptButton.addEventListener('click', ()=>{
     returnDate = lastDate.value;
     minPrice = parseInt(rangeInput[0].value);
     maxPrice = parseInt(rangeInput[1].value);
-    window.open("results.HTML");
+    window.open("./results/results.HTML");
 })
 
 

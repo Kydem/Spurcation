@@ -120,11 +120,42 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 #map { 
-    height: 600px; 
-    width: 600px;
+    height: 800px; 
+    width: 800px;
     background-image: rgb(78, 213, 218);
-    top: 20px;
+    top: 8%;
     border-radius: 4px;
-    right: 30%;
+    position: absolute;
+    left: 3%;
+}
 
+.popup {
+  height: 600px;
+  width: 400px;
+  background-image: linear-gradient(to right, rgb(219, 219, 219), white, white, white, white, rgb(235, 235, 235));
+  border: solid 1px; 
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  right: 80px;
+  top: 22%;
+}
+
+.close {
+  display: flex;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
+
+.popup2 {
+  height: 600px;
+  width: 400px;
+  background-image: linear-gradient(to right, rgb(219, 219, 219), white, white, white, white, rgb(235, 235, 235));
+  border: solid 1px; 
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  right: 30%;
+  top: 22%;
 }

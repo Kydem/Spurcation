@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "mime-types": "^2.1.35"
+  },
+  "name": "spurcation",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kydem/Spurcation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kydem/Spurcation/issues"
+  },
+  "homepage": "https://github.com/Kydem/Spurcation#readme",
+  "description": ""
+}
