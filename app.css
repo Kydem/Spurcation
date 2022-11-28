@@ -10,7 +10,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #17A2B8;
+  background-image: linear-gradient(to right, #14899b,#3fdff8 );
 }
 ::selection{
   color: #fff;
@@ -132,8 +132,8 @@ input[type="range"]::-webkit-slider-thumb{
 .popup {
   height: 600px;
   width: 400px;
-  background-image: linear-gradient(to right, rgb(219, 219, 219), white, white, white, white, rgb(235, 235, 235));
-  border: solid 1px; 
+  background-image: linear-gradient(to right, rgb(243, 243, 243), white);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1); 
   border-radius: 10px;
   display: flex;
   position: absolute;
@@ -151,11 +151,18 @@ input[type="range"]::-webkit-slider-thumb{
 .popup2 {
   height: 600px;
   width: 400px;
-  background-image: linear-gradient(to right, rgb(219, 219, 219), white, white, white, white, rgb(235, 235, 235));
-  border: solid 1px; 
+  background-image: linear-gradient(to right, rgb(240, 240, 240), white);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
   border-radius: 10px;
   display: flex;
   position: absolute;
   right: 30%;
   top: 22%;
+}
+
+.trip {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 43%;
 }

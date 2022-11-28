@@ -1,5 +1,20 @@
 // import axios from './node_modules/axios'
 
+const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://skyscanner50.p.rapidapi.com/api/v1/searchAirport?query=london",
+	"method": "GET",
+	"headers": {
+		"X-RapidAPI-Key": "65ebfb66f7mshd58171a78baf43bp19d49ajsn149b6640c6df",
+		"X-RapidAPI-Host": "skyscanner50.p.rapidapi.com"
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
 // const options = {
 //   method: 'GET',
 //   url: 'https://skyscanner50.p.rapidapi.com/api/v1/searchAirport',
